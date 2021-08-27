@@ -1,4 +1,4 @@
-# Web summer camp: React Native Chart
+# Web summer camp: React Native Chart graphQL server
 ## 🚀 How to start
 
 - Run `yarn` or `npm install`
