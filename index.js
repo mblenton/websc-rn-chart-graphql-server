@@ -80,7 +80,9 @@ const { makeExecutableSchema } = require("@graphql-tools/schema");
     pubsub.publish("LIVE_CHART_DATA", { chartData } );
     const timeout = setTimeout(incrementNumber, 1500);
     if (currentNumber >= 30) {
-      clearTimeout(timeout);
+      // clearTimeout(timeout);
+      currentNumber = 0;
+      chartData = [{ id: 0, x: 0, y: 0 }];
     }
   }
   // Start incrementing
